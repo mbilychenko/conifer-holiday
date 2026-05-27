@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Conifer Holiday
 
-## Getting Started
+An interactive UK conifer forest navigator — explore 100 of the largest conifer forest clusters across Scotland, England, and Wales.
 
-First, run the development server:
+## What it does
+
+- **Interactive map** — 100 conifer forest clusters derived from the UK National Forest Inventory (NFI), coloured by forest type
+- **Forest details** — click any cluster to see its name, country, area (hectares), and forest type
+- **Filter by type** — switch between All / Conifer / Mixed conifer clusters
+- **Google Places reviews** — visitor reviews and photos pulled server-side via the Google Places API
+- **Public transit routing** — journey times and step-by-step directions from any UK address via the Google Routes API
+
+## Tech stack
+
+| Layer | Choice |
+|---|---|
+| Framework | Next.js 15 (App Router) + TypeScript |
+| Styling | Tailwind CSS |
+| Map | Leaflet via react-leaflet |
+| Hosting | Vercel |
+| Cache | Upstash Redis (24h TTL on Google API responses) |
+| Reviews | Google Places API (New) — server-side only |
+| Transit | Google Routes API v2 — server-side only |
+
+## Data
+
+The forest clusters were produced by running K-means clustering (n=100) on ~13,000 conifer polygons from the [NFI Woodland GB 2023](https://www.forestresearch.gov.uk/tools-and-resources/national-forest-inventory/) dataset. K-means outperformed HDBSCAN, Louvain, Agglomerative, and DBSCAN on a composite benchmark (silhouette + spatial coherence).
+
+- 100 clusters across Scotland (49), England (41), Wales (10)
+- Total area: ~700,000 ha of conifer forest
+- Cluster sizes range from ~300 ha to ~80,000 ha
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Environment variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+For Google Places reviews and transit routing, create `.env.local`:
 
-## Learn More
+```
+GOOGLE_MAPS_API_KEY=
+UPSTASH_REDIS_REST_URL=
+UPSTASH_REDIS_REST_TOKEN=
+```
 
-To learn more about Next.js, take a look at the following resources:
+Steps 1–5 (map, clusters, sidebar, filters, spinner) work without any API keys.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+app/
+├── app/
+│   ├── page.tsx           ← main layout with sidebar state
+│   └── api/
+│       ├── places/        ← Google Places proxy
+│       └── transit/       ← Google Routes proxy
+├── components/
+│   ├── MapView.tsx        ← Leaflet map + GeoJSON + markers + filter
+│   ├── Sidebar.tsx        ← right-hand panel
+│   ├── ForestPanel.tsx    ← forest metadata
+│   ├── FilterBar.tsx      ← All / Conifer / Mixed chips
+│   ├── ReviewsPanel.tsx   ← Google Places reviews
+│   └── TransitPanel.tsx   ← journey planner
+├── lib/
+│   ├── types.ts           ← shared TypeScript interfaces
+│   ├── forestUtils.ts     ← colour + label helpers
+│   ├── leaflet-fix.ts     ← marker icon fix for Next.js
+│   └── redis.ts           ← Upstash client
+└── public/
+    └── data/
+        ├── clusters.geojson     ← 100 cluster polygons (10 MB)
+        └── clusters_meta.json   ← cluster metadata
+```
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deploy to Vercel with **Root Directory = `app`**. Add the three environment variables in the Vercel dashboard before deploying.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Licence
+
+MIT
