@@ -1,0 +1,67 @@
+run_id,algorithm,graph,params,runtime_s,status,n_clusters,n_noise,noise_pct,max_cluster_pct,median_cluster_size
+kmeans__none__n_clusters100,kmeans,none,"{""n_clusters"": 100}",0.0,cached,100,0,0.0,2.077,127.5
+kmeans__none__n_clusters150,kmeans,none,"{""n_clusters"": 150}",0.0,cached,150,0,0.0,1.519,85.5
+kmeans__none__n_clusters200,kmeans,none,"{""n_clusters"": 200}",0.0,cached,200,0,0.0,1.399,64.0
+kmeans__none__n_clusters250,kmeans,none,"{""n_clusters"": 250}",0.0,cached,250,0,0.0,0.938,50.5
+kmeans__none__n_clusters300,kmeans,none,"{""n_clusters"": 300}",0.0,cached,300,0,0.0,0.878,43.0
+dbscan__none__eps1500_min_samples3,dbscan,none,"{""eps"": 1500, ""min_samples"": 3}",0.0,cached,1316,5511,41.023,0.439,4.0
+dbscan__none__eps1500_min_samples5,dbscan,none,"{""eps"": 1500, ""min_samples"": 5}",0.0,cached,442,9948,74.051,0.417,6.0
+dbscan__none__eps2500_min_samples3,dbscan,none,"{""eps"": 2500, ""min_samples"": 3}",0.0,cached,918,2192,16.317,3.432,5.0
+dbscan__none__eps2500_min_samples5,dbscan,none,"{""eps"": 2500, ""min_samples"": 5}",0.0,cached,582,4408,32.812,2.159,8.0
+dbscan__none__eps3500_min_samples3,dbscan,none,"{""eps"": 3500, ""min_samples"": 3}",0.0,cached,610,1158,8.62,11.002,6.0
+dbscan__none__eps3500_min_samples5,dbscan,none,"{""eps"": 3500, ""min_samples"": 5}",0.0,cached,398,2379,17.709,9.327,10.0
+dbscan__none__eps5000_min_samples3,dbscan,none,"{""eps"": 5000, ""min_samples"": 3}",0.0,cached,328,557,4.146,19.093,7.0
+dbscan__none__eps5000_min_samples5,dbscan,none,"{""eps"": 5000, ""min_samples"": 5}",0.0,cached,243,1099,8.181,18.959,10.0
+hdbscan__none__cluster_selection_methodeom_min_cluster_size5_min_samples1,hdbscan,none,"{""min_cluster_size"": 5, ""min_samples"": 1, ""cluster_selection_method"": ""eom""}",0.0,cached,1068,2003,14.91,0.662,8.0
+hdbscan__none__cluster_selection_methodeom_min_cluster_size5_min_samples3,hdbscan,none,"{""min_cluster_size"": 5, ""min_samples"": 3, ""cluster_selection_method"": ""eom""}",0.0,cached,774,2938,21.87,0.878,10.0
+hdbscan__none__cluster_selection_methodeom_min_cluster_size5_min_samples5,hdbscan,none,"{""min_cluster_size"": 5, ""min_samples"": 5, ""cluster_selection_method"": ""eom""}",0.0,cached,517,3744,27.87,1.064,12.0
+hdbscan__none__cluster_selection_methodeom_min_cluster_size10_min_samples1,hdbscan,none,"{""min_cluster_size"": 10, ""min_samples"": 1, ""cluster_selection_method"": ""eom""}",0.0,cached,478,2390,17.791,1.184,17.0
+hdbscan__none__cluster_selection_methodeom_min_cluster_size10_min_samples3,hdbscan,none,"{""min_cluster_size"": 10, ""min_samples"": 3, ""cluster_selection_method"": ""eom""}",0.0,cached,387,2679,19.942,3.446,18.0
+hdbscan__none__cluster_selection_methodeom_min_cluster_size10_min_samples5,hdbscan,none,"{""min_cluster_size"": 10, ""min_samples"": 5, ""cluster_selection_method"": ""eom""}",0.0,cached,315,3638,27.081,3.484,22.0
+hdbscan__none__cluster_selection_methodeom_min_cluster_size15_min_samples1,hdbscan,none,"{""min_cluster_size"": 15, ""min_samples"": 1, ""cluster_selection_method"": ""eom""}",0.0,cached,293,2479,18.453,3.58,28.0
+hdbscan__none__cluster_selection_methodeom_min_cluster_size15_min_samples3,hdbscan,none,"{""min_cluster_size"": 15, ""min_samples"": 3, ""cluster_selection_method"": ""eom""}",0.0,cached,239,2831,21.073,3.566,32.0
+hdbscan__none__cluster_selection_methodeom_min_cluster_size15_min_samples5,hdbscan,none,"{""min_cluster_size"": 15, ""min_samples"": 5, ""cluster_selection_method"": ""eom""}",0.0,cached,213,3417,25.435,3.484,33.0
+hdbscan__none__cluster_selection_methodeom_min_cluster_size20_min_samples1,hdbscan,none,"{""min_cluster_size"": 20, ""min_samples"": 1, ""cluster_selection_method"": ""eom""}",0.0,cached,201,2414,17.969,3.58,38.0
+hdbscan__none__cluster_selection_methodeom_min_cluster_size20_min_samples3,hdbscan,none,"{""min_cluster_size"": 20, ""min_samples"": 3, ""cluster_selection_method"": ""eom""}",0.0,cached,185,2992,22.272,3.566,41.0
+hdbscan__none__cluster_selection_methodeom_min_cluster_size20_min_samples5,hdbscan,none,"{""min_cluster_size"": 20, ""min_samples"": 5, ""cluster_selection_method"": ""eom""}",0.0,cached,176,3613,26.894,3.484,39.0
+agglomerative__prox_2500m__n_clusters100,agglomerative,prox_2500m,"{""n_clusters"": 100}",0.0,cached,100,0,0.0,2.449,130.5
+agglomerative__prox_2500m__n_clusters150,agglomerative,prox_2500m,"{""n_clusters"": 150}",0.0,cached,150,0,0.0,1.749,82.5
+agglomerative__prox_2500m__n_clusters200,agglomerative,prox_2500m,"{""n_clusters"": 200}",0.0,cached,200,0,0.0,1.414,60.5
+louvain__prox_2500m__resolution0p05,louvain,prox_2500m,"{""resolution"": 0.05}",1.53,cached,2755,0,0.0,0.841,2.0
+louvain__prox_2500m__resolution0p1,louvain,prox_2500m,"{""resolution"": 0.1}",1.35,cached,2746,0,0.0,0.841,2.0
+louvain__prox_2500m__resolution0p25,louvain,prox_2500m,"{""resolution"": 0.25}",1.32,cached,2746,0,0.0,0.841,2.0
+louvain__prox_2500m__resolution0p5,louvain,prox_2500m,"{""resolution"": 0.5}",1.5,cached,2672,0,0.0,1.69,2.0
+louvain__prox_2500m__resolution1p0,louvain,prox_2500m,"{""resolution"": 1.0}",1.58,cached,2675,0,0.0,1.504,2.0
+louvain__prox_2500m__resolution2p0,louvain,prox_2500m,"{""resolution"": 2.0}",1.6,cached,2684,0,0.0,1.057,2.0
+louvain__prox_2500m__resolution5p0,louvain,prox_2500m,"{""resolution"": 5.0}",1.52,cached,2717,0,0.0,0.67,2.0
+louvain__prox_5000m__resolution0p05,louvain,prox_5000m,"{""resolution"": 0.05}",2.66,cached,1289,0,0.0,1.072,5.0
+louvain__prox_5000m__resolution0p1,louvain,prox_5000m,"{""resolution"": 0.1}",2.28,cached,851,0,0.0,2.471,3.0
+louvain__prox_5000m__resolution0p25,louvain,prox_5000m,"{""resolution"": 0.25}",3.28,cached,841,0,0.0,2.486,2.0
+louvain__prox_5000m__resolution0p5,louvain,prox_5000m,"{""resolution"": 0.5}",3.35,cached,845,0,0.0,2.322,2.0
+louvain__prox_5000m__resolution1p0,louvain,prox_5000m,"{""resolution"": 1.0}",4.55,cached,798,0,0.0,2.71,2.0
+louvain__prox_5000m__resolution2p0,louvain,prox_5000m,"{""resolution"": 2.0}",4.99,cached,817,0,0.0,1.898,2.0
+louvain__prox_5000m__resolution5p0,louvain,prox_5000m,"{""resolution"": 5.0}",2.82,cached,859,0,0.0,1.392,3.0
+louvain__prox_10000m__resolution0p05,louvain,prox_10000m,"{""resolution"": 0.05}",4.53,cached,345,0,0.0,2.002,20.0
+louvain__prox_10000m__resolution0p1,louvain,prox_10000m,"{""resolution"": 0.1}",6.65,cached,337,0,0.0,2.002,21.0
+louvain__prox_10000m__resolution0p25,louvain,prox_10000m,"{""resolution"": 0.25}",8.47,cached,337,0,0.0,2.002,21.0
+louvain__prox_10000m__resolution0p5,louvain,prox_10000m,"{""resolution"": 0.5}",7.2,cached,155,0,0.0,5.01,12.0
+louvain__prox_10000m__resolution1p0,louvain,prox_10000m,"{""resolution"": 1.0}",7.5,cached,139,0,0.0,5.717,7.0
+louvain__prox_10000m__resolution2p0,louvain,prox_10000m,"{""resolution"": 2.0}",6.92,cached,155,0,0.0,3.677,14.0
+louvain__prox_10000m__resolution5p0,louvain,prox_10000m,"{""resolution"": 5.0}",7.93,cached,186,0,0.0,2.65,40.5
+louvain__knn_10__resolution0p05,louvain,knn_10,"{""resolution"": 0.05}",3.0,cached,215,0,0.0,1.63,54.0
+louvain__knn_10__resolution0p1,louvain,knn_10,"{""resolution"": 0.1}",2.82,cached,201,0,0.0,1.787,55.0
+louvain__knn_10__resolution0p25,louvain,knn_10,"{""resolution"": 0.25}",2.84,cached,197,0,0.0,2.114,59.0
+louvain__knn_10__resolution0p5,louvain,knn_10,"{""resolution"": 0.5}",3.66,cached,61,0,0.0,4.131,212.0
+louvain__knn_10__resolution1p0,louvain,knn_10,"{""resolution"": 1.0}",2.69,cached,57,0,0.0,3.432,220.0
+louvain__knn_10__resolution2p0,louvain,knn_10,"{""resolution"": 2.0}",2.66,cached,85,0,0.0,2.925,141.0
+louvain__knn_10__resolution5p0,louvain,knn_10,"{""resolution"": 5.0}",2.54,cached,138,0,0.0,2.092,100.0
+spectral__prox_10000m__n_clusters100,spectral,prox_10000m,"{""n_clusters"": 100}",16.91,ok,100,0,0.0,63.466,16.0
+spectral__prox_10000m__n_clusters150,spectral,prox_10000m,"{""n_clusters"": 150}",14.43,ok,150,0,0.0,38.998,21.0
+spectral__prox_10000m__n_clusters200,spectral,prox_10000m,"{""n_clusters"": 200}",20.59,ok,200,0,0.0,46.628,20.5
+spectral__prox_10000m__n_clusters250,spectral,prox_10000m,"{""n_clusters"": 250}",21.02,ok,250,0,0.0,48.295,19.5
+spectral__prox_10000m__n_clusters300,spectral,prox_10000m,"{""n_clusters"": 300}",36.88,ok,300,0,0.0,17.404,21.0
+spectral__knn_10__n_clusters100,spectral,knn_10,"{""n_clusters"": 100}",7.72,ok,100,0,0.0,2.59,120.0
+spectral__knn_10__n_clusters150,spectral,knn_10,"{""n_clusters"": 150}",10.48,ok,150,0,0.0,2.97,85.0
+spectral__knn_10__n_clusters200,spectral,knn_10,"{""n_clusters"": 200}",14.7,ok,200,0,0.0,1.31,65.0
+spectral__knn_10__n_clusters250,spectral,knn_10,"{""n_clusters"": 250}",18.54,ok,250,0,0.0,1.69,51.0
+spectral__knn_10__n_clusters300,spectral,knn_10,"{""n_clusters"": 300}",24.81,ok,300,0,0.0,1.831,41.5

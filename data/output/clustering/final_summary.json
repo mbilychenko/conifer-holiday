@@ -1,0 +1,20 @@
+{
+  "algorithm": "HDBSCAN",
+  "params": {
+    "min_cluster_size": 15,
+    "min_samples": 3,
+    "cluster_selection_method": "eom",
+    "metric": "euclidean"
+  },
+  "simplify_tolerance_degrees": 0.001,
+  "n_input_polygons": 13434,
+  "n_clusters": 239,
+  "n_noise_polygons": 2831,
+  "noise_pct": 21.1,
+  "thetford_clusters": 3,
+  "kielder_clusters": 4,
+  "wales_clusters": 29,
+  "output_file": "D:\\Projects\\Conifer_holiday\\data\\output\\clusters.geojson",
+  "output_size_mb": 7.978,
+  "source": "NFI Woodland GB 2023, Forestry Commission via ArcGIS Hub, accessed 2026-05-23"
+}

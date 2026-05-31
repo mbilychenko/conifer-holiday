@@ -1,0 +1,25 @@
+scheme,algorithm,graph,run_id,params,n_clusters,composite,silhouette,davies_bouldin,detection_rate,single_cluster_rate
+default,kmeans,none,kmeans__none__n_clusters100,"{""n_clusters"": 100}",100,0.713,0.4009,0.7733,100.0,90.0
+default,louvain,prox_10000m,louvain__prox_10000m__resolution5p0,"{""resolution"": 5.0}",186,0.711,0.3367,0.6673,100.0,95.0
+default,agglomerative,prox_2500m,agglomerative__prox_2500m__n_clusters150,"{""n_clusters"": 150}",150,0.7081,0.3854,0.7782,100.0,90.0
+default,hdbscan,none,hdbscan__none__cluster_selection_methodeom_min_cluster_size15_min_samples1,"{""min_cluster_size"": 15, ""min_samples"": 1, ""cluster_selection_method"": ""eom""}",293,0.688,0.4013,0.7006,100.0,75.0
+default,spectral,prox_10000m,spectral__prox_10000m__n_clusters300,"{""n_clusters"": 300}",300,0.6376,0.1849,0.9574,100.0,90.0
+default,dbscan,none,dbscan__none__eps5000_min_samples3,"{""eps"": 5000, ""min_samples"": 3}",328,0.6207,-0.1028,0.6575,100.0,100.0
+equal,louvain,prox_10000m,louvain__prox_10000m__resolution5p0,"{""resolution"": 5.0}",186,0.7216,0.3367,0.6673,100.0,95.0
+equal,kmeans,none,kmeans__none__n_clusters100,"{""n_clusters"": 100}",100,0.7162,0.4009,0.7733,100.0,90.0
+equal,agglomerative,prox_2500m,agglomerative__prox_2500m__n_clusters150,"{""n_clusters"": 150}",150,0.712,0.3854,0.7782,100.0,90.0
+equal,hdbscan,none,hdbscan__none__cluster_selection_methodeom_min_cluster_size15_min_samples3,"{""min_cluster_size"": 15, ""min_samples"": 3, ""cluster_selection_method"": ""eom""}",239,0.6896,0.4098,0.6703,95.0,80.0
+equal,dbscan,none,dbscan__none__eps5000_min_samples3,"{""eps"": 5000, ""min_samples"": 3}",328,0.6508,-0.1028,0.6575,100.0,100.0
+equal,spectral,prox_10000m,spectral__prox_10000m__n_clusters300,"{""n_clusters"": 300}",300,0.6489,0.1849,0.9574,100.0,90.0
+entity_only,dbscan,none,dbscan__none__eps5000_min_samples5,"{""eps"": 5000, ""min_samples"": 5}",243,1.0,-0.0661,0.6797,100.0,100.0
+entity_only,spectral,prox_10000m,spectral__prox_10000m__n_clusters150,"{""n_clusters"": 150}",150,0.98,-0.2671,1.9243,100.0,95.0
+entity_only,louvain,prox_10000m,louvain__prox_10000m__resolution1p0,"{""resolution"": 1.0}",139,0.98,0.2802,0.7094,100.0,95.0
+entity_only,agglomerative,prox_2500m,agglomerative__prox_2500m__n_clusters150,"{""n_clusters"": 150}",150,0.96,0.3854,0.7782,100.0,90.0
+entity_only,kmeans,none,kmeans__none__n_clusters100,"{""n_clusters"": 100}",100,0.96,0.4009,0.7733,100.0,90.0
+entity_only,hdbscan,none,hdbscan__none__cluster_selection_methodeom_min_cluster_size15_min_samples1,"{""min_cluster_size"": 15, ""min_samples"": 1, ""cluster_selection_method"": ""eom""}",293,0.9,0.4013,0.7006,100.0,75.0
+internal_only,hdbscan,none,hdbscan__none__cluster_selection_methodeom_min_cluster_size10_min_samples5,"{""min_cluster_size"": 10, ""min_samples"": 5, ""cluster_selection_method"": ""eom""}",315,0.5418,0.4572,0.5965,90.0,70.0
+internal_only,kmeans,none,kmeans__none__n_clusters250,"{""n_clusters"": 250}",250,0.4923,0.4129,0.7495,100.0,65.0
+internal_only,louvain,prox_10000m,louvain__prox_10000m__resolution0p25,"{""resolution"": 0.25}",337,0.4845,0.3554,0.6297,100.0,90.0
+internal_only,agglomerative,prox_2500m,agglomerative__prox_2500m__n_clusters200,"{""n_clusters"": 200}",200,0.4812,0.393,0.7564,100.0,85.0
+internal_only,dbscan,none,dbscan__none__eps3500_min_samples5,"{""eps"": 3500, ""min_samples"": 5}",398,0.399,0.1586,0.5638,95.0,80.0
+internal_only,spectral,knn_10,spectral__knn_10__n_clusters300,"{""n_clusters"": 300}",300,0.3931,0.321,1.1494,100.0,60.0

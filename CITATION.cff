@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite as below."
+title: "UK Conifer Forest Destination Clusters from the National Forest Inventory 2023"
+abstract: >
+  Clustering of 66 NFI conifer polygons
+  into named forest destinations using a multi-algorithm benchmark of density-based,
+  contiguity-constrained regionalization, and graph community detection methods.
+authors:
+  - family-names: "(your name)"
+    given-names: "(your given name)"
+date-released: "2026-05-23"
+keywords:
+  - forest inventory
+  - geospatial clustering
+  - HDBSCAN
+  - SKATER
+  - Max-P regionalization
+  - Louvain community detection
+license: "OGL-UK-3.0"
+type: dataset

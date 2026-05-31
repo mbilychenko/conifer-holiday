@@ -1,0 +1,50 @@
+{
+  "n_reference_forests": 22,
+  "n_primary": 20,
+  "n_mixed": 2,
+  "detection_rate_pct": 100.0,
+  "detection_rate_ci95": [
+    83.9,
+    100.0
+  ],
+  "detection_rate_n": "20/20",
+  "primary_detected": 20,
+  "primary_missed": [],
+  "single_cluster_rate_pct": 95.0,
+  "single_cluster_rate_ci95": [
+    76.4,
+    99.1
+  ],
+  "single_cluster_rate_n": "19/20",
+  "tight_placement_pct": 20.0,
+  "tight_placement_ci95": [
+    8.1,
+    41.6
+  ],
+  "tight_placement_n": "4/20",
+  "area_accuracy_pct": 65.0,
+  "area_accuracy_ci95": [
+    43.3,
+    81.9
+  ],
+  "area_accuracy_n": "13/20",
+  "median_clusters_per_forest": 1.0,
+  "median_nearest_cluster_km": 9.809999999999999,
+  "median_area_ratio_cluster_vs_expected": 1.75,
+  "mixed_sites_with_conifer_cluster": [
+    "Sherwood Forest",
+    "Forest of Dean"
+  ],
+  "interpretation": {
+    "detection_rate_pct": "% of known conifer destinations with at least one cluster in 5km buffer (target >= 85%)",
+    "detection_rate_ci95": "Wilson-score 95% CI on detection_rate_pct (n = n_primary)",
+    "single_cluster_rate_pct": "% of detected forests captured as a SINGLE cluster (higher = less fragmented; target >= 70%)",
+    "single_cluster_rate_ci95": "Wilson-score 95% CI on single_cluster_rate_pct (n = n_detected)",
+    "tight_placement_pct": "% of detected forests with nearest cluster centroid within 5km (target >= 80%)",
+    "tight_placement_ci95": "Wilson-score 95% CI on tight_placement_pct (n = n_detected)",
+    "area_accuracy_pct": "% of detected forests where cluster area is within 0.3x-3x of Wikipedia area (target >= 60%)",
+    "area_accuracy_ci95": "Wilson-score 95% CI on area_accuracy_pct (n = n_detected)",
+    "median_area_ratio_cluster_vs_expected": "primary cluster area / Wikipedia area. Below 1.0 = our conifer-only filter excludes broadleaf parts of the park.",
+    "mixed_sites_with_conifer_cluster": "mixed broadleaf+conifer forests where we (correctly) found a conifer plantation cluster"
+  }
+}

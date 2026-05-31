@@ -1,0 +1,46 @@
+Loading filtered NFI + reference forests...
+Loading National_Forest_Inventory_GB_2023.shp...
+  Filtered: 13,434 polygons
+  Join-count weight matrix from prox_2500m: 13434 nodes
+
+grid_metrics.csv lacks silhouette_lo/hi columns — recomputing all (P2.4 upgrade)
+Computing metrics for 66 runs...
+  [  5/66] kmeans__none__n_clusters300: silh=0.412 [0.408,0.418], det=100.0, (17.03s)
+  [ 10/66] dbscan__none__eps3500_min_samples3: silh=0.050 [0.035,0.065], det=100.0, (19.99s)
+  [ 15/66] hdbscan__none__cluster_selection_methodeom_min_cluster_size5_min_samples3: silh=0.476 [0.471,0.484], det=100.0, (10.56s)
+  [ 20/66] hdbscan__none__cluster_selection_methodeom_min_cluster_size15_min_samples1: silh=0.401 [0.393,0.407], det=100.0, (14.82s)
+  [ 25/66] hdbscan__none__cluster_selection_methodeom_min_cluster_size20_min_samples5: silh=0.459 [0.454,0.464], det=90.0, (14.55s)
+  [ 30/66] louvain__prox_2500m__resolution0p1: silh=0.269 [0.258,0.285], det=100.0, (14.22s)
+  [ 35/66] louvain__prox_2500m__resolution5p0: silh=0.262 [0.252,0.276], det=100.0, (23.81s)
+  [ 40/66] louvain__prox_5000m__resolution1p0: silh=0.183 [0.167,0.194], det=100.0, (35.3s)
+  [ 45/66] louvain__prox_10000m__resolution0p25: silh=0.355 [0.350,0.361], det=100.0, (33.02s)
+  [ 50/66] louvain__knn_10__resolution0p05: silh=0.213 [0.208,0.218], det=100.0, (31.92s)
+  [ 55/66] louvain__knn_10__resolution2p0: silh=0.269 [0.263,0.275], det=100.0, (38.35s)
+  [ 60/66] spectral__prox_10000m__n_clusters250: silh=-0.191 [-0.208,-0.182], det=100.0, (51.96s)
+  [ 65/66] spectral__knn_10__n_clusters250: silh=0.311 [0.299,0.319], det=100.0, (29.45s)
+  [ 66/66] spectral__knn_10__n_clusters300: silh=0.321 [0.308,0.328], det=100.0, (28.45s)
+
+Saved: D:\Projects\Conifer_holiday\data\output\clustering\grid_metrics.csv
+Total metric-computation time: 1711.4s
+
+=== Bootstrap stability ===
+
+Best configs by composite score:
+         louvain ( prox_10000m): louvain__prox_10000m__resolution5p0  clusters=186, silh=0.337, det=100.0%, composite=0.810
+          kmeans (        none): kmeans__none__n_clusters100  clusters=100, silh=0.401, det=100.0%, composite=0.803
+   agglomerative (  prox_2500m): agglomerative__prox_2500m__n_clusters150  clusters=150, silh=0.385, det=100.0%, composite=0.800
+         hdbscan (        none): hdbscan__none__cluster_selection_methodeom_min_cluster_size15_min_samples1  clusters=293, silh=0.401, det=100.0%, composite=0.778
+        spectral ( prox_10000m): spectral__prox_10000m__n_clusters300  clusters=300, silh=0.185, det=100.0%, composite=0.760
+          dbscan (        none): dbscan__none__eps5000_min_samples5  clusters=243, silh=-0.066, det=100.0%, composite=0.759
+
+Saved: D:\Projects\Conifer_holiday\data\output\clustering\best_per_algorithm.csv
+  louvain: mean ARI = 0.841 (n=50)
+  kmeans: mean ARI = 0.720 (n=50)
+  Deferring agglomerative bootstrap to 08b_agglomerative_bootstrap.py (computed via joblib loky in a separate __main__-safe script)
+  hdbscan: mean ARI = 0.423 (n=50)
+  spectral: mean ARI = 0.237 (n=50)
+  dbscan: mean ARI = 0.797 (n=50)
+
+Saved: D:\Projects\Conifer_holiday\data\output\clustering\bootstrap_stability.csv
+
+=== Phase 0d-D done ===

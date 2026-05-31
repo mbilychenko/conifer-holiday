@@ -1,0 +1,65 @@
+{
+  "comparison": [
+    {
+      "algorithm": "HDBSCAN",
+      "n_clusters": 239,
+      "noise_pct": 21.1,
+      "max_cluster_pct": 3.6,
+      "median_cluster_size": 32.0,
+      "thetford_clusters": 3,
+      "kielder_clusters": 4,
+      "wales_clusters": 29,
+      "criteria_passed": "6/6"
+    },
+    {
+      "algorithm": "Louvain",
+      "n_clusters": 1448,
+      "noise_pct": 9.5,
+      "max_cluster_pct": 0.7,
+      "median_cluster_size": 4.0,
+      "thetford_clusters": 6,
+      "kielder_clusters": 17,
+      "wales_clusters": 194,
+      "criteria_passed": "3/6"
+    },
+    {
+      "algorithm": "SKATER(k=250)",
+      "n_clusters": 1448,
+      "noise_pct": 9.5,
+      "max_cluster_pct": 0.7,
+      "median_cluster_size": 4.0,
+      "thetford_clusters": 6,
+      "kielder_clusters": 17,
+      "wales_clusters": 194,
+      "criteria_passed": "3/6"
+    },
+    {
+      "algorithm": "MaxP(threshold=100ha)",
+      "n_clusters": 1448,
+      "noise_pct": 9.5,
+      "max_cluster_pct": 0.7,
+      "median_cluster_size": 4.0,
+      "thetford_clusters": 6,
+      "kielder_clusters": 17,
+      "wales_clusters": 194,
+      "criteria_passed": "3/6"
+    },
+    {
+      "algorithm": "Agglomerative(k=200)",
+      "n_clusters": 200,
+      "noise_pct": 0.0,
+      "max_cluster_pct": 1.4,
+      "median_cluster_size": 60.5,
+      "thetford_clusters": 2,
+      "kielder_clusters": 7,
+      "wales_clusters": 28,
+      "criteria_passed": "5/6"
+    }
+  ],
+  "best_algorithm": "HDBSCAN",
+  "best_criteria_passed": "6/6",
+  "output_file": "D:\\Projects\\Conifer_holiday\\data\\output\\clusters.geojson",
+  "output_size_mb": 7.978,
+  "n_clusters": 239,
+  "proximity_radius_m": 2500
+}

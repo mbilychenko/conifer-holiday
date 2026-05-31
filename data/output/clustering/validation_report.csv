@@ -1,0 +1,23 @@
+forest,country,role,expected_area_ha,n_clusters_in_buffer,primary_cluster_id,primary_cluster_area_ha,primary_area_in_buffer_ha,area_ratio,nearest_cluster_centroid_km,nearest_cluster_id,detected
+Thetford Forest,England,primary,18730,1,cluster_0053,11597.9,3463.6,0.62,0.59,cluster_0053,True
+Kielder Forest,England,primary,60000,2,cluster_0081,18255.5,1556.7,0.3,6.95,cluster_0081,True
+Cannock Chase,England,primary,2222,1,cluster_0060,1826.1,1213.6,0.82,2.74,cluster_0060,True
+Grizedale Forest,England,primary,2447,1,cluster_0077,5243.3,1287.4,2.14,17.85,cluster_0077,True
+Whinlatter Forest,England,primary,1200,1,cluster_0077,5243.3,989.6,4.37,16.07,cluster_0077,True
+Hamsterley Forest,England,primary,2000,1,cluster_0102,5406.1,1240.6,2.7,15.13,cluster_0102,True
+Dalby Forest,England,primary,3576,1,cluster_0101,7788.1,2133.6,2.18,5.11,cluster_0101,True
+Delamere Forest,England,primary,972,1,cluster_0070,459.7,423.0,0.47,0.51,cluster_0070,True
+Wendover Woods,England,primary,325,1,cluster_0031,1510.7,112.9,4.65,20.41,cluster_0031,True
+Coed y Brenin,Wales,primary,3645,1,cluster_0180,9181.7,992.9,2.52,18.69,cluster_0180,True
+Hafren Forest,Wales,primary,3513,1,cluster_0179,10750.4,150.4,3.06,13.55,cluster_0179,True
+Brechfa Forest,Wales,primary,6500,1,cluster_0176,4685.7,874.1,0.72,5.3,cluster_0176,True
+Afan Forest Park,Wales,primary,3250,1,cluster_0173,12036.9,344.2,3.7,15.24,cluster_0173,True
+Galloway Forest Park,Scotland,primary,78000,1,cluster_0108,9873.8,1610.4,0.13,5.43,cluster_0108,True
+Tay Forest Park,Scotland,primary,33000,1,cluster_0144,16649.0,1548.6,0.5,1.47,cluster_0144,True
+Glentress Forest,Scotland,primary,1667,1,cluster_0138,10121.1,1798.0,6.07,5.41,cluster_0138,True
+Argyll Forest Park,Scotland,primary,24000,1,cluster_0117,18282.9,1614.6,0.76,11.39,cluster_0117,True
+Glenmore Forest Park,Scotland,primary,5000,1,cluster_0148,18130.4,1463.9,3.63,9.09,cluster_0148,True
+Loch Ard / Achray,Scotland,primary,10000,1,cluster_0119,13570.8,2147.4,1.36,10.53,cluster_0119,True
+Glen Affric,Scotland,primary,17000,1,cluster_0128,14282.9,1503.7,0.84,11.79,cluster_0128,True
+Sherwood Forest,England,mixed,425,1,cluster_0085,4213.4,886.1,9.91,1.69,cluster_0085,True
+Forest of Dean,England,mixed,22500,1,cluster_0011,5757.5,1966.7,0.26,3.71,cluster_0011,True

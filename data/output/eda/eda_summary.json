@@ -1,0 +1,90 @@
+{
+  "source": {
+    "file": "National_Forest_Inventory_GB_2023.shp",
+    "release": "2023",
+    "provider": "Forestry Commission via ArcGIS Hub",
+    "access_date": "2026-05-23",
+    "licence": "Open Government Licence v3.0"
+  },
+  "raw": {
+    "total_polygons": 641092,
+    "columns": [
+      "OBJECTID",
+      "CATEGORY",
+      "IFT_IOA",
+      "COUNTRY",
+      "Area_Ha",
+      "Shape__Are",
+      "Shape__Len",
+      "geometry",
+      "area_ha"
+    ],
+    "crs": "EPSG:27700",
+    "geometry_nulls": 0,
+    "geometry_invalid": 332,
+    "null_columns": {},
+    "ift_ioa_counts": {
+      "Broadleaved": 297204,
+      "Conifer": 95775,
+      "Felled": 47377,
+      "Young trees": 45680,
+      "Assumed woodland": 40613,
+      "Mixed mainly broadleaved": 27940,
+      "Mixed mainly conifer": 27437,
+      "Grassland": 17573,
+      "Ground prep": 8740,
+      "Windblow": 8469,
+      "Shrub": 5210,
+      "Bare area": 4218,
+      "Low density": 4158,
+      "Other vegetation": 3992,
+      "Open water": 1484,
+      "Urban": 1332,
+      "Failed": 1317,
+      "Road": 1250,
+      "Coppice": 460,
+      "Agriculture land": 403,
+      "Quarry": 194,
+      "River": 93,
+      "Windfarm": 71,
+      "Coppice with standards": 60,
+      "Power line": 42
+    },
+    "area_ha_stats": {
+      "count": 641092.0,
+      "mean": 5.026,
+      "std": 24.929,
+      "min": 0.0,
+      "25%": 0.769,
+      "50%": 1.345,
+      "75%": 3.073,
+      "max": 3531.237
+    }
+  },
+  "filtered": {
+    "conifer_types": [
+      "Conifer",
+      "Mixed mainly conifer"
+    ],
+    "area_min_ha": 10,
+    "polygon_count": 13434,
+    "reduction_pct": 97.9,
+    "total_area_ha": 694385.0,
+    "median_area_ha": 22.7,
+    "max_area_ha": 3531.0,
+    "type_breakdown": {
+      "Conifer": 13068,
+      "Mixed mainly conifer": 366
+    },
+    "bounding_box_27700": {
+      "min_easting": 76097,
+      "min_northing": 20323,
+      "max_easting": 649342,
+      "max_northing": 972463
+    }
+  },
+  "size_estimate": {
+    "filtered_raw_geojson_mb": 288.0,
+    "cluster_dissolved_geojson_mb_estimate": "<5"
+  }
+}

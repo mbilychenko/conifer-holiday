@@ -1,0 +1,7 @@
+algorithm,run_id,mean_ari,ari_lo,ari_hi,n_iterations,note
+kmeans,kmeans__none__n_clusters100,0.7202,0.6781,0.7587,50,
+louvain,louvain__prox_10000m__resolution5p0,0.8411,0.8067,0.872,50,
+agglomerative,agglomerative__prox_2500m__n_clusters150,0.741,0.7,0.7863,50,"parallel bootstrap (joblib loky, 6 workers); Ward + prox_2500m connectivity rebuilt per iter"
+hdbscan,hdbscan__none__cluster_selection_methodeom_min_cluster_size15_min_samples1,0.4228,0.3621,0.4839,50,
+spectral,spectral__prox_10000m__n_clusters300,0.237,0.1338,0.3641,50,
+dbscan,dbscan__none__eps5000_min_samples3,0.8938,0.7947,0.9585,50,

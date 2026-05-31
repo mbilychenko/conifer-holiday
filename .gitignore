@@ -1,0 +1,43 @@
+# ── Data ──────────────────────────────────────────────────────────────────────
+# Raw source data is too large for git (NFI shapefiles are hundreds of MB)
+data/raw/
+data/processed/
+
+# Large geospatial source formats
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.sbn
+*.sbx
+*.zip
+*.tar.gz
+*.gpkg
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+*.egg-info/
+.pytest_cache/
+
+# ── App (Next.js) ─────────────────────────────────────────────────────────────
+app/node_modules/
+app/.next/
+app/.env.local
+app/.env*.local
+
+# ── System ────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor ────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,7 @@
+metric,statistic,p_value,n_graphs,n_algorithms,note
+silhouette,,,0,3,insufficient data for Friedman
+davies_bouldin,,,0,3,insufficient data for Friedman
+calinski_harabasz,,,0,3,insufficient data for Friedman
+detection_rate,,,0,3,insufficient data for Friedman
+single_cluster_rate,,,0,3,insufficient data for Friedman
+bb_join_ratio,,,0,3,insufficient data for Friedman

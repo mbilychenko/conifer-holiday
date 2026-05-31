@@ -1,0 +1,5 @@
+graph,kind,param,n_nodes,n_edges,n_components,n_isolated,largest_component,mean_degree,median_degree,max_degree,mean_edge_m,median_edge_m,build_seconds
+prox_2500m,proximity,2500,13434,27931,2655,1282,461,4.16,4,30,1603.0,1652.0,0.0
+prox_5000m,proximity,5000,13434,83987,753,293,2565,12.5,11,62,3093.0,3235.0,0.01
+prox_10000m,proximity,10000,13434,258504,94,24,8190,38.49,36,115,6192.0,6536.0,0.03
+knn_10,knn,10,13434,81411,2,0,13393,12.12,12,22,4155.0,3316.0,0.09
