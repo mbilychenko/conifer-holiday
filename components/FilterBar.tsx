@@ -9,7 +9,7 @@ interface Props {
 
 export default function FilterBar({ active, onChange }: Props) {
   return (
-    <div className="absolute top-3 left-3 z-[1000] flex gap-2">
+    <div className="flex gap-2">
       {TYPES.map(t => (
         <button
           key={t}

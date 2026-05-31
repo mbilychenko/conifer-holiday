@@ -13,3 +13,9 @@ export function typeToLabel(dominant_type: string): string {
     default:                     return dominant_type
   }
 }
+
+// Golden-angle spread gives 100 visually distinct hues
+export function clusterToColour(index: number): string {
+  const hue = (index * 137.508) % 360
+  return `hsl(${hue.toFixed(0)}, 60%, 42%)`
+}
