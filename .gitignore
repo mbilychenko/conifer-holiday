@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Photos — large binary assets, generated locally by 14_places_enrichment.py
+public/data/photos/
